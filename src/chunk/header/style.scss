@@ -1,0 +1,24 @@
+.header {
+    background: var(--white);
+    position: relative;
+    padding: 4rem 0;
+    z-index: 100;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+    &__logo {
+        display: flex;
+    }
+    &__menu {
+        display: flex;
+        gap: 3rem;
+    }
+    &__group {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+}

@@ -1,0 +1,19 @@
+@use "../../../app/mixins" as *;
+.mainAboutVideo {
+    position: relative;
+    padding-top: 67.31%;
+    display: block;
+    margin: 0 0 3rem 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    & img {
+        @include absoluteImg();
+    }
+    &:hover {
+        :global(.play-btn svg) {
+            transform: scale(1.2);
+        }
+    }
+}

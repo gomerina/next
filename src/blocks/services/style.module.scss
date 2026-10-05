@@ -1,0 +1,51 @@
+.servicesInner {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.servicesText {
+    max-width: 30.1rem;
+    width: 100%;
+}
+.servicesLayout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+}
+.servicesListFormat {
+    display: inline-block;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--blue);
+    flex-shrink: 0;
+}
+.servicesListItem:not(:last-child) {
+    margin: 0 0 3rem 0;
+}
+.servicesLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.servicesListName {
+    color: var(--purple);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    &:hover {
+        text-decoration-style: none;
+    }
+}
+.servicesCard {
+    min-height: 22rem;
+    padding: 3rem;
+    background: var(--purple);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    border-radius: 2rem;
+}

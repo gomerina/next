@@ -1,0 +1,40 @@
+.lang {
+    position: relative;
+    font-weight: 700;
+    &.active {
+        & .lang__body {
+            opacity: 1;
+            visibility: visible;
+        }
+        & .lang__head svg {
+            transform: rotate(180deg);
+        }
+    }
+    & a:not([class]) {
+        text-decoration: none;
+    }
+    &__head {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+        user-select: none;
+        & svg {
+            transition: 0.3s ease-in-out;
+        }
+    }
+    &__body {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        padding: 0.5rem 0 0 0;
+    }
+    &__inner {
+        padding: 1rem 0.5rem;
+        border: 1px solid var(--black);
+    }
+}

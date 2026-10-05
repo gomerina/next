@@ -1,0 +1,24 @@
+@use "../../app/mixins" as *;
+
+.news-card {
+    &__head {
+        position: relative;
+        padding-top: 70%;
+        border-radius: 2rem;
+        margin: 0 0 2.5rem 0;
+        overflow: hidden;
+        & img {
+            @include absoluteImg();
+        }
+    }
+    &__body {
+        padding: 0 1.5rem;
+    }
+    &__date {
+        margin: 0 0 1.5rem 0;
+        font-weight: 700;
+    }
+    &__name {
+        margin: 0 0 1.2rem 0;
+    }
+}

@@ -1,0 +1,40 @@
+body {
+    font-size: 1.6rem;
+    line-height: 140%;
+}
+h1,
+.h1 {
+    font-size: 5rem;
+    line-height: 140%;
+}
+h2,
+.h2 {
+    font-size: 4rem;
+    line-height: 140%;
+}
+h3,
+.h3 {
+    font-size: 1.9rem;
+    line-height: 140%;
+}
+.small-text {
+    font-size: 1.3rem;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.medium-text {
+    font-size: 1.4rem;
+    line-height: 140%;
+}
+p {
+    margin: 0 0 1.5rem 0;
+}
+li {
+    margin: 0 0 1.5rem 0;
+}
+ul:not([class]) {
+    padding: 0 0 0 2.4rem;
+    & li {
+        list-style-type: disc;
+    }
+}

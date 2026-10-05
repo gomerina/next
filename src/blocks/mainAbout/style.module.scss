@@ -1,0 +1,29 @@
+@use "../../app/mixins" as *;
+
+.mainAbout {
+    padding: 10rem 0;
+    background: rgba(61, 52, 139, 0.05);
+}
+.mainAboutInner {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.mainAboutText {
+    max-width: 63rem;
+    width: 100%;
+}
+.mainAboutMedia {
+    max-width: 52rem;
+    width: 100%;
+}
+
+.mainAboutCaption {
+    padding: 3rem;
+    background: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem;
+    border-radius: 2rem;
+}
