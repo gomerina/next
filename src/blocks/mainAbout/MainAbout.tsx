@@ -2,6 +2,7 @@ import styles from './style.module.scss';
 
 import Link from 'next/link';
 import Video from './video/Video';
+import { publicAsset } from '@/utils/publicAsset';
 export default function MainAbout() {
     const {
         mainAbout,
@@ -55,7 +56,7 @@ export default function MainAbout() {
                     <div className={mainAboutMedia}>
                         <Video
                             link={'https://rutube.ru/play/embed/8d6b298576d7aa395b290e4f240af522/'}
-                            src={'/img/video@x2.png'}
+                            src={publicAsset('/img/video@x2.png')}
                         />
                         <Link href="request" className={mainAboutCaption}>
                             <div className='small-text'>

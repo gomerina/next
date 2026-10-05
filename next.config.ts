@@ -6,8 +6,7 @@ const nextConfig: NextConfig = {
 
   output: "export",
 
-  basePath: "/my-app",
-  assetPrefix: "/my-app/",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "",
 
   images: {
     unoptimized: true,

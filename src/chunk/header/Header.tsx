@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import HeaderSearch from './headerSearch/HeaderSearch';
 import HeaderLang from './headerLang/HeaderLang';
+import { publicAsset } from '@/utils/publicAsset';
 export default function Header() {
     const menuItems = [
         {
@@ -25,7 +26,7 @@ export default function Header() {
                 <div className='header__inner'>
                     <Link href="/" className='header__logo'>
                         <Image
-                            src={'img/svg/logo.svg'}
+                            src={publicAsset('/img/svg/logo.svg')}
                             alt='logo'
                             width={108}
                             height={30}

@@ -1,6 +1,8 @@
 import styles from './style.module.scss';
 import Image from "next/image";
 import Link from 'next/link';
+import { publicAsset } from '@/utils/publicAsset';
+
 export default function MainScreen() {
     const mainData = [
         {
@@ -20,7 +22,7 @@ export default function MainScreen() {
         <div className={styles.mainScreen}>
             <div className={styles.mainScreenImg}>
                 <Image
-                    src={'/img/ms@x2.png'}
+                    src={publicAsset('/img/ms@x2.png')}
                     alt=''
                     loading="eager"
                     width={1920}
