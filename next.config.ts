@@ -1,15 +1,18 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
+
   devIndicators: false,
 
   output: "export",
 
-  basePath: process.env.NEXT_BASE_PATH ?? "",
+  basePath,
 
   images: {
-    unoptimized: false,
+    unoptimized: true,
   },
 };
 
