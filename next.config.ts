@@ -9,10 +9,10 @@ const nextConfig: NextConfig = {
 
 
   // Для сервера убрать output и images
-  //output: "export",
-  //images: {
-  //  unoptimized: true,
-  //},
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
   basePath,
 
 
