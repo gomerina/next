@@ -2,15 +2,27 @@
     display: flex;
     justify-content: space-between;
     gap: 3rem;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 .servicesText {
     max-width: 30.1rem;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        max-width: unset;
+    }
 }
 .servicesLayout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
+    @media screen and (max-width: 1440px) {
+        gap: 1.2rem;
+    }
+    @media screen and (max-width: 580px) {
+        grid-template-columns: 4fr;
+    }
 }
 .servicesListFormat {
     display: inline-block;
@@ -23,6 +35,9 @@
 }
 .servicesListItem:not(:last-child) {
     margin: 0 0 3rem 0;
+    @media screen and (max-width: 768px) {
+        margin: 0 0 1.5rem 0;
+    }
 }
 .servicesLink {
     display: flex;
@@ -48,4 +63,11 @@
     justify-content: space-between;
     gap: 1.5rem;
     border-radius: 2rem;
+    @media screen and (max-width: 1440px) {
+        min-height: 16rem;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 1.5rem;
+        min-height: unset;
+    }
 }

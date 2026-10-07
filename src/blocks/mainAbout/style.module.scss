@@ -3,19 +3,34 @@
 .mainAbout {
     padding: 10rem 0;
     background: rgba(61, 52, 139, 0.05);
+    @media screen and (max-width: 1440px) {
+        padding: 6rem 0;
+    }
+    @media screen and (max-width: 1024px) {
+        padding: 3.5rem 0;
+    }
 }
 .mainAboutInner {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 .mainAboutText {
     max-width: 63rem;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        max-width: unset;
+    }
 }
 .mainAboutMedia {
     max-width: 52rem;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        max-width: unset;
+    }
 }
 
 .mainAboutCaption {
@@ -26,4 +41,9 @@
     flex-direction: column;
     gap: 3.8rem;
     border-radius: 2rem;
+    @media screen and (max-width: 1440px) {
+        gap: 2rem;
+        padding: 1.5rem;
+        border-radius: 1.2rem;
+    }
 }

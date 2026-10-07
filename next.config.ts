@@ -7,13 +7,15 @@ const nextConfig: NextConfig = {
 
   devIndicators: false,
 
-  output: "export",
 
+  // Для сервера убрать output и images
+  //output: "export",
+  //images: {
+  //  unoptimized: true,
+  //},
   basePath,
 
-  images: {
-    unoptimized: false,
-  },
+
 };
 
 export default nextConfig;

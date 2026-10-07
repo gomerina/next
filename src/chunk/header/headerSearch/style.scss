@@ -2,6 +2,12 @@
     padding: 0 0 0 4.4rem;
     position: relative;
     width: 32rem;
+    @media screen and (max-width: 1024px) {
+        width: 16rem;
+    }
+    @media screen and (max-width: 768px) {
+        width: 14rem;
+    }
     & input {
         display: block;
         height: 24px;

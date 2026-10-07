@@ -7,18 +7,30 @@
         border-radius: 2rem;
         margin: 0 0 2.5rem 0;
         overflow: hidden;
+        @media screen and (max-width: 1260px) {
+            margin: 0 0 1rem 0;
+        }
         & img {
             @include absoluteImg();
         }
     }
     &__body {
         padding: 0 1.5rem;
+        @media screen and (max-width: 1024px) {
+            padding: 0 1.2rem;
+        }
     }
     &__date {
         margin: 0 0 1.5rem 0;
         font-weight: 700;
+        @media screen and (max-width: 1024px) {
+            margin: 0 0 0.7rem 0;
+        }
     }
     &__name {
         margin: 0 0 1.2rem 0;
+        @media screen and (max-width: 1024px) {
+            margin: 0 0 0.5rem 0;
+        }
     }
 }

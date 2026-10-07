@@ -1,0 +1,99 @@
+.footer {
+    color: var(--white);
+    margin-top: 15rem;
+    @media screen and (max-width: 1440px) {
+        margin-top: 10rem;
+    }
+    @media screen and (max-width: 1260px) {
+        margin-top: 6rem;
+    }
+    & a {
+        color: var(--white);
+        &:not([class]) {
+            color: var(--white);
+            text-decoration: none;
+        }
+    }
+    &__top {
+        padding: 4.5rem 0;
+        background: rgba(61, 52, 139, 0.85);
+        @media screen and (max-width: 1260px) {
+            padding: 2rem 0;
+        }
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+            @media screen and (max-width: 1024px) {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    }
+    &__logo {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media screen and (max-width: 1024px) {
+            position: static;
+            transform: none;
+        }
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    &__group {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        @media screen and (max-width: 1024px) {
+            flex-grow: 1;
+            width: 100%;
+            justify-content: space-between;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+    }
+    &__bottom {
+        padding: 8rem 0;
+        background: var(--purple);
+        @media screen and (max-width: 1260px) {
+            padding: 4rem 0;
+        }
+        &-inner {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            margin: 0 0 8rem 0;
+            @media screen and (max-width: 1260px) {
+                margin: 0 0 4rem 0;
+            }
+            @media screen and (max-width: 1024px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media screen and (max-width: 560px) {
+                grid-template-columns: 4fr;
+            }
+        }
+        &-name {
+            text-transform: uppercase;
+            margin: 0 0 3rem 0;
+        }
+    }
+    &__copy {
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0.5;
+    }
+    &__menu {
+        &-item {
+            margin: 0 0 1.5rem 0;
+        }
+    }
+}

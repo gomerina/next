@@ -41,12 +41,15 @@ html {
   font-family: var(--PTSans), sans-serif;
   font-weight: 400;
   color: black;
+
+  background: #fff;
+}
+html,
+body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #fff;
 }
-
 main {
   flex-grow: 1;
 }
